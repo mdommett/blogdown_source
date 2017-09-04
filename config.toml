@@ -1,11 +1,11 @@
-baseurl = "/"
+baseurl = "https://mdommett.github.io"
 languageCode = "en-us"
-title = "A Hugo website"
+title = "Michael Dommett"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-
+publishDir="../mdommett.github.io/
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
@@ -20,7 +20,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     url = "https://twitter.com/rstudio"
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = "Compchem and the like"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
