@@ -1,39 +1,71 @@
-baseurl = "https://mdommett.github.io/"
-languageCode = "en-us"
+## Basic Configuration
+
+baseurl = "https://mdommett.github.io/" 
+builddrafts = false
+canonifyurls = false
+languageCode = "en-US"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishDir= "../mdommett.github.io"
+
+author = "Michael Dommett"
 title = "Michael Dommett"
-theme = "hugo-lithium-theme"
-googleAnalytics = ""
-disqusShortname = ""
+
+theme = "cocoa"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-publishDir="../mdommett.github.io/"
-[permalinks]
-    post = "/:year/:month/:day/:slug/"
+## Hugo Built-in Features
+#disqusShortname = "https-shenoybr-github-io-hugo-goa-demo" # Comment out to disable Disqus.
+#googleAnalytics = "XYZ"
+#enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "Michael Dommett"
+avatar = "img/michael.jpg"
+description = "Compchem and the like"
+github = "//github.com/mdommett"
+twitter = "https://twitter.com/dommett110"
+linkedin = "https://www.linkedin.com/in/michael-dommett-aa135641/"
+email = "michaeldommett1@gmail.com"
+
+## Site Meta Settings
+[params.meta]
+description = ""
+keywords = ""
+
+
+
+## Extras
+[params.extra]
+#poweredby = true
+#hightlightjs = true
+
+## Main Menu
 
 [[menu.main]]
     name = "About"
+    weight = 200
+    identifier = "about"
     url = "/about/"
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/rstudio/blogdown"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
 
-[params]
-    description = "Compchem and the like"
-
-    # options for highlight.js (version, additional languages, and theme)
+[[menu.main]]
+	name = "Thoughts"
+	weight = 300
+	identifier = "post"
+	url = "/post/"
+	
+[[menu.main]]
+	name = "Publications"
+	weight = 400
+	identifier = "publications"
+	url = "/publications/"	
+	
+ # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"
     highlightjsCDN = "//cdn.bootcss.com"
     highlightjsLang = ["r", "yaml"]
     highlightjsTheme = "github"
-
     MathJaxCDN = "//cdn.bootcss.com"
     MathJaxVersion = "2.7.1"
-
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
-
+	
